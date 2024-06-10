@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* utility */
+.margin_TB1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.padding_1 {
+    padding: 1rem;
+}
+
+.margin_L1 {
+    margin-left: 1rem;
+}
+
+.margin_LR1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.margin_LR2 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.margin_R1 {
+    margin-right: 1rem;
+}
+
+.margin_R2 {
+    margin-right: 2rem;
+}
+
+.margin_T1 {
+    margin-top: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify_content_FE {
+    justify-content: flex-end;
+}
+
+.justify_content_FS {
+    justify-content: flex-start;
+}
+
+.align_items_FE {
+    align-items: flex-end;
+}
+
+.align_items_FS {
+    align-items: flex-start;
+}
+
+.margin_B1 {
+    margin-bottom: 1rem;
+}
+
+.positionR {
+    position: relative;
+}
+
+.positionA {
+    position: absolute;
+}
+
+.align_items_CE {
+    align-items: center;
+}
+
+.align_items_SB {
+    align-items: space-between;
+}
+
+.justify_content_CE {
+    justify-content: center;
+}
+
+.justify_content_SB {
+    justify-content: space-between;
+}
+
+.justify_content_SA {
+    justify-content: space-around;
+}
+
+.border_R {
+    border-right: 1px solid black;
+}
+
+.border_L {
+    border-left: 1px solid black;
+}
+
+.border_B {
+    border-bottom: 1px solid black;
+}
+
+.width_100 {
+    width: 100%;
+}
+
+.positionS_top {
+    position: sticky;
+    top: 0px;
+}
+
+.flex_row_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.text_align_right {
+    text-align: right;
+}
+
+.flex_wrap {
+    flex-wrap: wrap;
+}
+
+/* --------------- */
+#fix_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+#fix_text_content {
+    color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+#lable {
+    /* width: 300px;
+    height: 50px; */
+    margin-left: 5%;
+    border: 0px;
+    color: black;
+    font-size: 20px;
+}
+
+#lable:focus {
+    outline: none;
+}
+
+#lable_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    border: 1px solid grey;
+    border-radius: 50px;
+}
+
+#arrow {
+    margin-right: 3%;
+}
+
+#arrow:hover {
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+#left_bar {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 15%;
+    height: 100%;
+    border: 1px solid grey;
+    font-size: 20px;
+    color: grey;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+}
+
+#mex_content {
+    height: 90%;
+    width: 100%;
+}
+
+.box_server_mex {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.box_user_mex {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.top_mex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.user_mex {
+    display: flex;
+    flex-direction: column;
+    background-color: dodgerblue;
+    color: white;
+    height: 20%;
+    width: 40%;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+.server_mex {
+    display: flex;
+    flex-direction: column;
+    background-color: blueviolet;
+    color: white;
+    height: 20%;
+    width: 40%;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.center_bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    width: 84vw;
+    color: black;
+    border: 1px solid grey;
+}
+
+#messaggio {
+    width: 75%;
+    margin-left: 2%;
+    color: black;
+    font-size: 20px;
+    border: 0px;
+}
+
+#messaggio:focus {
+    outline: none;
+}
+
+#second {
+    display: none;
+}
+#invio_messaggio{
+    margin-right: 3%;
+}
+#invio_messaggio:hover{
+    cursor: pointer;
+}
+#utenti_online{
+    display: flex;
+    flex-direction: column;
+}
