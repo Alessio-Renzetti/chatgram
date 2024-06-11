@@ -1,12 +1,22 @@
 let invio_username = $("#arrow")
 let invio_messaggio = $("#invio_messaggio")
 let user = $("#lable")
+
 invio_username.click(function () {
-    $("#fix_main").
-        hide(500)
-    $("#second").
-        fadeIn(200)
-    user = $("#lable").val()
+    $.get(("http://192.168.1.237/chatgram/leggi.php"), function (data) {
+        user = $("#lable").val()
+        let app = JSON.parse(data)
+        if (app.utenti_online.includes(user) == true) {
+            alert("Nome utente non disponibile");
+        }
+        else {
+            $("#fix_main").
+                hide(500)
+            $("#second").
+                fadeIn(200)
+        }
+        $("#lable").val("")
+    })
     setInterval(function () {
         $.get("http://192.168.1.237/chatgram/leggi.php", function (data) {
             let leggi = JSON.parse(data)
@@ -15,8 +25,8 @@ invio_username.click(function () {
             for (i in leggi.utenti_online) {
                 $("#utenti_online").
                     append($("<div>").
-                    addClass("flex").
-                    css("margin-bottom","1rem").
+                        addClass("flex").
+                        css("margin-bottom", "1rem").
                         append($("<div>").
                             html(`<i class="fa-solid fa-user" style="color:dodgerblue;"></i>`)).
                         append($("<div>").html(`&nbsp;${leggi.utenti_online[i]}`)));
